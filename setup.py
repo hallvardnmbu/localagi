@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name='localagi',
-    version='0.1.0',
+    version='1.0.0',
     license='MIT',
     packages=['localagi'],
     description='Experience local Artificial General Intelligence.',
@@ -13,16 +13,18 @@ setuptools.setup(
     classifiers=[
         'Development Status :: 4 - Beta',
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: >=3.9',
+        'Programming Language :: Python :: 3.11',
     ],
     python_requires='>=3.9',
     install_requires=[
         'torch',
+        'numpy'
     ],
     entry_points={
         'console_scripts': [
-            'localagi load = localagi.__main__:load',
-            'localagi prompt = localagi.__main__:prompt',
+            'localagi = localagi.__main__:main',
+            'localagi-load = localagi.__main__:load',
+            'localagi-prompt = localagi.__main__:prompt',
         ],
     },
 )

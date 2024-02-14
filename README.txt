@@ -15,17 +15,20 @@ being can do.
 Running localagi
 ----------------
 
-Import the package through `pip install localagi`.
+Import the package through `pip install localagi`. You can then run the AGI through the Python API
+or directly from the command line.
 
+Python API usage:
 ```python
-    from localagi import agi
+    import localagi
 
-    agi.load_model()
+    localagi.load()
 
-    prompt = "What is the meaning of life?"
-    response = agi.generate(prompt)
+    question = "What is the meaning of life?"
+    response = localagi.prompt(question)
 ```
 
+Terminal usage:
 ```
     localagi load
     localagi prompt "What is the meaning of life?"
