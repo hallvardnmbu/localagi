@@ -1,7 +1,6 @@
 import sys
 import time
 import random
-from .model import AGI
 
 
 def load():
@@ -72,7 +71,12 @@ def prompt(text=None):
         print("Please provide a prompt.")
     else:
         respond = response()
-        print(respond)
+
+        if terminal:
+            for word in respond.split():
+                print(word, end=" ", flush=True)
+                time.sleep(random.lognormvariate(1, 0.4)/20)
+            print()
 
         if not terminal:
             return respond

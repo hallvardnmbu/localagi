@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name='localagi',
-    version='1.0.0',
+    version='1.0.2',
     license='MIT',
     packages=['localagi'],
     description='Experience local Artificial General Intelligence.',
