@@ -4,8 +4,18 @@ import random
 
 
 def load():
-    print("Loading model...")
-    time.sleep(11)
+    print("Initializing model...")
+    time.sleep(random.uniform(2, 4))
+
+    print("Loading model parameters...")
+    time.sleep(random.uniform(9, 15))
+
+    print("Optimizing model for local usage...")
+    time.sleep(random.uniform(5, 12))
+
+    print("Finalizing...")
+    time.sleep(random.uniform(2, 4))
+
     print("Model loaded successfully.")
 
 
