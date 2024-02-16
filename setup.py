@@ -2,9 +2,12 @@ import setuptools
 
 setuptools.setup(
     name='localagi',
-    version='1.0.3',
+    version='1.1.0',
     license='MIT',
     packages=['localagi'],
+    package_data={
+        'localagi': ['*.h5'],
+    },
     description='Experience local Artificial General Intelligence.',
     long_description=open('README.txt').read(),
     long_description_content_type="text/markdown",
@@ -23,8 +26,6 @@ setuptools.setup(
     entry_points={
         'console_scripts': [
             'localagi = localagi.__main__:main',
-            'localagi-load = localagi.__main__:load',
-            'localagi-prompt = localagi.__main__:prompt',
         ],
     },
 )

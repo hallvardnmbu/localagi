@@ -15,10 +15,20 @@ being can do.
 Running localagi
 ----------------
 
-Import the package through `pip install localagi`. You can then run the AGI through the Python API
-or directly from the command line.
+Import the package through `pip install localagi`, and run it directly from the terminal by typing
+`localagi`:
 
-Python API usage:
+```
+    pip install localagi
+
+    localagi
+```
+
+Enjoy your journey with Local AGI!
+
+Running through the terminal is the intended way to use Local AGI, but you can also use the Python
+API as such:
+
 ```python
     import localagi
 
@@ -27,11 +37,3 @@ Python API usage:
     question = "What is the meaning of life?"
     response = localagi.prompt(question)
 ```
-
-Terminal usage:
-```
-    localagi load
-    localagi prompt "What is the meaning of life?"
-```
-
-Enjoy your journey with Local AGI!
